@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Calculator, DollarSign, Percent, Building, TrendingUp, Briefcase, Target } from "lucide-react"
+import Link from "next/link"
 
 export default function RateCalculator() {
   const [activeTab, setActiveTab] = useState<string>("calculate-total")
@@ -583,7 +584,7 @@ export default function RateCalculator() {
             >
               Shajeda & Co
             </a>
-            . All rights reserved.
+            . All rights reserved. | Designed by <Link href="https://appeland.com" target="_blank" rel="noopener noreferrer" className="font-semibold underline hover:text-secondary transition-colors">Appeland</Link>  
           </p>
         </div>
       </footer>
